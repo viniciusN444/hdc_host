@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>HDC Host</title>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -30,84 +33,97 @@
 
     <section class="cards">
         <div class="card">
-            <div class="icon"></div>
+            <div class="icon" id="icon01">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h2>Segurança</h2>
+            </div>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque eligendi provident beatae. Eveniet, reiciendis velit. Nam, quisquam corrupti? Aut, quas nesciunt laudantium suscipit facere enim pariatur blanditiis hic modi!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque eligendi provident beatae.
+                Eveniet, reiciendis velit. Nam, quisquam corrupti? Aut, quas nesciunt laudantium suscipit facere enim
+                pariatur blanditiis hic modi!
             </p>
         </div>
 
         <div class="card">
-            <div class="icon"></div>
+            <div class="icon" id="icon02">
+                <i class="fa-solid fa-paper-plane"></i>
+                <h2>Performance</h2>
+            </div>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque eligendi provident beatae. Eveniet, reiciendis velit. Nam, quisquam corrupti? Aut, quas nesciunt laudantium suscipit facere enim pariatur blanditiis hic modi!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque eligendi provident beatae.
+                Eveniet, reiciendis velit. Nam, quisquam corrupti? Aut, quas nesciunt laudantium suscipit facere enim
+                pariatur blanditiis hic modi!
             </p>
         </div>
 
         <div class="card">
-            <div class="icon"></div>
+            <div class="icon" id="icon03">
+                <i class="fa-solid fa-comments"></i>
+                <h2>Suporte 24/7</h2>
+            </div>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque eligendi provident beatae. Eveniet, reiciendis velit. Nam, quisquam corrupti? Aut, quas nesciunt laudantium suscipit facere enim pariatur blanditiis hic modi!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda atque eligendi provident beatae.
+                Eveniet, reiciendis velit. Nam, quisquam corrupti? Aut, quas nesciunt laudantium suscipit facere enim
+                pariatur blanditiis hic modi!
             </p>
         </div>
     </section>
 
     <section class="plans_prices">
-        <h2>Planos e Preços</h2>
-        <p>
-            Selecione o plano que atende as suas necessidades
-        </p>
-        <div class="plans">
-            <div class="plan_basic">
-                <div class="price_icon"></div>
-                <h3>Básico</h3>
-                <div class="plan_info">
-                    <p>20GB de espaço</p>
-                    <p>10 Subdomains</p>
-                    <p>25 contas de e-mail</p>
-                    <p>C-panel</p>
-                    <p>Suporte 24/7</p>
-                </div>
-                <button class="btnSaibaMais">Saiba mais</button>
-            </div>
+        <div>
+            <h2>Planos e Preços</h2>
+            <p class="pDescricao">
+                Selecione o plano que atende as suas necessidades
+            </p>
         </div>
-            <div class="plan_dedicated">
-                <div class="price_icon"></div>
-                <h3>Dedicado</h3>
-                <div class="plan_info">
-                    <p>50GB de espaço</p>
-                    <p>20 Subdomains</p>
-                    <p>50 contas de e-mail</p>
-                    <p>C-panel</p>
-                    <p>Suporte 24/7</p>
-                </div>
-                <button class="btnSaibaMais">Saiba mais</button>
+        <div class="plan_basic">
+            <div class="price_icon01">R$15/mês</div>
+            <h3>Básico</h3>
+            <div class="plan_info">
+                <p>20GB de espaço</p>
+                <p>10 Subdomains</p>
+                <p>25 contas de e-mail</p>
+                <p>C-panel</p>
+                <p>Suporte 24/7</p>
             </div>
+            <button class="btnSaibaMais">Saiba mais</button>
         </div>
-            <div class="plan_dedicated_plus">
-                <div class="price_icon"></div>
-                <h3>Dedicado Plus</h3>
-                <div class="plan_info">
-                    <p>10GB de espaço</p>
-                    <p>100 Subdomains</p>
-                    <p>100 contas de e-mail</p>
-                    <p>C-panel</p>
-                    <p>Suporte 24/7</p>
-                </div>
-                <button class="btnSaibaMais">Saiba mais</button>
+        <div class="plan_dedicated">
+            <div class="price_icon"></div>
+            <h3>Dedicado</h3>
+            <div class="plan_info">
+                <p>50GB de espaço</p>
+                <p>20 Subdomains</p>
+                <p>50 contas de e-mail</p>
+                <p>C-panel</p>
+                <p>Suporte 24/7</p>
             </div>
+            <button class="btnSaibaMais">Saiba mais</button>
         </div>
-            <div class="plan_cloud">
-                <div class="price_icon"></div>
-                <h3>Cloud</h3>
-                <div class="plan_info">
-                    <p>20GB de espaço</p>
-                    <p>200 Subdomains</p>
-                    <p>200 contas de e-mail</p>
-                    <p>C-panel</p>
-                    <p>Suporte 24/7</p>
-                </div>
-                <button class="btnSaibaMais">Saiba mais</button>
+
+        <div class="plan_dedicated_plus">
+            <div class="price_icon"></div>
+            <h3>Dedicado Plus</h3>
+            <div class="plan_info">
+                <p>10GB de espaço</p>
+                <p>100 Subdomains</p>
+                <p>100 contas de e-mail</p>
+                <p>C-panel</p>
+                <p>Suporte 24/7</p>
             </div>
+            <button class="btnSaibaMais">Saiba mais</button>
+        </div>
+        <div class="plan_cloud">
+            <div class="price_icon"></div>
+            <h3>Cloud</h3>
+            <div class="plan_info">
+                <p>20GB de espaço</p>
+                <p>200 Subdomains</p>
+                <p>200 contas de e-mail</p>
+                <p>C-panel</p>
+                <p>Suporte 24/7</p>
+            </div>
+            <button class="btnSaibaMais">Saiba mais</button>
         </div>
     </section>
 
@@ -137,4 +153,5 @@
         </form>
     </section>
 </body>
+
 </html>

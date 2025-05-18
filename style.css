@@ -1,55 +1,214 @@
 @charset "UTF-8";
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --bg-color: #232931;
-    --bg-button: #2DC66D;
+:root {
+  --bg-color: #232931;
+  --bg-button: #2DC66D;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
-    background-color: var(--bg-color);
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-  .logo {
-    width: 120px;
-    flex-shrink: 0;
-  }
+  background-color: var(--bg-color);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
 
-  img{
-    width: 100%;
-  }
-  
-  nav {
-    flex-grow: 1; 
-  }
-  
-  nav > ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
-  }
+.logo {
+  width: 120px;
+  flex-shrink: 0;
+}
 
-  nav > ul > li>  a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
+img {
+  width: 100%;
+}
 
-  nav > ul > button{
-    background-color: var(--bg-button);
-    padding: 10px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
-  
+nav {
+  flex-grow: 1;
+}
 
+nav>ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+nav>ul>li>a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav>ul>li>a:hover {
+  transition: 0.3s ease;
+  color: var(--bg-button);
+  text-decoration: underline;
+}
+
+nav>ul>button {
+  background-color: var(--bg-button);
+  color: white;
+  padding: 10px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  border: none;
+}
+
+nav>ul>button:hover {
+  transition: 0.5s ease;
+  background-color: white;
+  color: var(--bg-button);
+  font-weight: bold;
+}
+
+/*1° Seção*/
+.slogan {
+  height: 80vh;
+  background-image: url('fundo.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.slogan h1,
+.slogan p {
+  color: white;
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.slogan p {
+  padding: 10px;
+  font-weight: bold;
+}
+
+/*2° Seção*/
+.cards {
+  height: 100vh;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.cards .icon i {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+}
+
+.cards .icon h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#icon01 {
+  color: var(--bg-button);
+}
+
+#icon02 {
+  color: red;
+}
+
+#icon03 {
+  color: orange;
+}
+
+.cards p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+/*3° Seção*/
+.plans_prices {
+  height: 100vh;
+  max-width: 350px;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.plans_prices h2 {
+  text-align: center;
+  color: var(--bg-color);
+  margin-top: 20px;
+}
+
+.plans_prices p {
+  color: #8F8F8F;
+}
+
+.price_icon01 {
+  width: 100px;
+  height: 100px;
+  background-color: var(--bg-button);
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  top: 25px;
+  z-index: 1;
+}
+
+.plan_basic, 
+.plan_dedicated,
+.plan_dedicated_plus,
+.plan_cloud,
+.btnSaibaMais {
+  width: 100%;
+}
+
+.plan_basic h3 {
+  background-color: var(--bg-color);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+
+.plan_info{
+  background-color: #E7E9E9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: justify;
+  padding: 10px 0;
+}
+
+.btnSaibaMais{
+  background-color: #F45B58;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.3rem;
+}
