@@ -24,10 +24,11 @@ header {
   align-items: center;
   padding: 10px;
   gap: 10px;
+  overflow: hidden;
 }
 
 .logo img {
-  width: 150px; /* Tamanho visível no mobile */
+  width: 150px; 
   height: auto;
   display: block;
 }
@@ -232,3 +233,4 @@ nav>ul>button:hover {
   padding: 15px;
   font-size: 1.3rem;
 }
+
